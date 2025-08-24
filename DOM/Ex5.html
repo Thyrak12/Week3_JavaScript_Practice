@@ -15,7 +15,13 @@
     <script>
         // TODO: When "Delete" button is clicked, remove that <li> from the list
         // Your Code Here
+        const delButton = document.querySelectorAll('.delBtn');
 
+        delButton.forEach(button => {
+            button.addEventListener('click', function (){
+                this.parentElement.remove();
+            });
+        });
     </script>
 </body>
 

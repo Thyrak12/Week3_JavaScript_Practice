@@ -13,6 +13,12 @@
     <script>
         // TODO: When button is clicked, change <p> text to "You clicked the button!"
         // Your Code Here
+        const button = document.getElementById("btn");
+        const message = document.getElementById("message");
+
+        button.addEventListener("click", () => {
+            message.textContent = "You clicked the button!"
+        });
     </script>
 </body>
 
