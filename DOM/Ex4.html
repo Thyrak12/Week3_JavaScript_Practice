@@ -14,6 +14,15 @@
     <script>
         // TODO: When button is clicked, display "Hello, [name]" inside <p>
         // Your Code Here
+        const button = document.getElementById('showBtn');
+        const input = document.getElementById('nameInput');
+        const output = document.getElementById('output');
+
+        button.addEventListener('click',() =>{
+            const name = input.value.trim();
+            output.textContent = name ? `Hello, ${name}` : "Please enter your name.";
+        })
+
     </script>
 </body>
 

@@ -10,6 +10,17 @@
     <script>
         // TODO: Each time button is clicked, switch body background between "white" and "lightblue"
         // Your Code Here
+        const button = document.getElementById('toggleBtn');
+
+        button.addEventListener('click', () => {
+            const currentColor = document.body.style.backgroundColor;
+            if(currentColor == 'lightblue'){
+                document.body.style.backgroundColor = 'white';
+            }else{
+                document.body.style.backgroundColor = 'lightblue';
+            }
+        })
     </script>
 </body>
 </html>
+

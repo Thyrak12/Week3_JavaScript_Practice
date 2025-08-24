@@ -16,6 +16,14 @@
     <script>
         // TODO: When button is clicked, add <li>Item 3</li> to the list
         // Your Code Here
+        const button = document.getElementById("addBtn");
+        const list = document.getElementById("myList");
+
+        button.addEventListener("click", () =>{
+            const newItem = document.createElement("li");
+            newItem.textContent = "Item 3";
+            list.appendChild(newItem);
+        });
     </script>
 </body>
 
